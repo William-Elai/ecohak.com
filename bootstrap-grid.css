@@ -7,7 +7,98 @@
   display: flex;
   flex-direction: column; /* This stacks children vertically, one after another */
 }
-.container,
+/* 1. .container: centered, fixed max-width for large screens */
+.container {
+  width: 100%;
+  max-width: 1200px;      /* Or whatever max width you prefer */
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* 2. .container-fluid: always stretches full width */
+.container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* 3. .row: flex container for grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px; /* gutters */
+  margin-left: -15px;
+}
+
+/* 4. Columns for grid system (responsive example) */
+.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-7, .col-lg-9 {
+  padding-right: 15px;
+  padding-left: 15px;
+  /* Responsive widths for large screens */
+}
+.col-lg-3   { flex: 0 0 25%;   max-width: 25%;  }
+.col-lg-4   { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-lg-5   { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-lg-7   { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-lg-9   { flex: 0 0 75%;    max-width: 75%;  }
+/* Add responsive queries as needed for smaller screens */
+
+/* 5. .content: center text and elements inside */
+.content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 6. .services-item: card styling for services */
+.services-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  padding: 24px 20px;
+  margin-bottom: 24px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* 7. section: spacing for semantic sections */
+section {
+  padding: 60px 0;
+  background-color: var(--surface-color, #f8f9fa);
+}
+
+/* Example: Center content inside a section if needed */
+section .container, section .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: Center all text inside a section */
+.section {
+  text-align: center;
+}
+
+/* Optional: Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-7, .col-lg-9 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .container, .container-fluid {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+}
 .container-fluid,
 .container-xxl,
 .container-xl,
