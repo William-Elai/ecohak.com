@@ -1,54 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <!-- #BeginEditable "doctitle" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ECOLOGICAL CONSERVATION</title>
-  <!-- #EndEditable -->
   <meta name="author" content="William~hax">
-<meta name="copyright" content="© 2025 William~hax. All rights reserved.">
+  <meta name="copyright" content="© 2025 William~hax. All rights reserved.">
 
   <!-- Favicons -->
   <link href="favicon.png" rel="icon">
   <link href="apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Icons & Vendor CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-icons.css" rel="stylesheet">
   <link href="aos.css" rel="stylesheet">
   <link href="swiper-bundle.min.css" rel="stylesheet">
   <link href="glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Custom CSS -->
   <link href="main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Active
-  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
-	
-<body class="index-page">
+
+<body class="index-page dark">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-	      <img src="logo.png" alt="">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="logo.png" alt=""> -->
-        <h1 class="sitename">Ecological conservation</h1>
+        <img src="logo.png" alt="">
+        <h1 class="sitename">Ecological Conservation</h1>
       </a>
 
       <nav id="nav-menu" class="hidden">
@@ -68,59 +56,71 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container">
         <div class="row align-items-center justify-content-between">
+          
+          <!-- Swiper Images -->
           <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": 1,
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 20
-                    },
-                    "768": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 30
-                    },
-                    "1200": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 40
-                    }
-                  }
-                }
-              </script>
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img_h_6.jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img_h_7.jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img_h_8.jpg" alt="Image" class="img-fluid">
-                </div>
+                <div class="swiper-slide"><img src="img_h_6.jpg" alt="Nature 1" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="img_h_7.jpg" alt="Nature 2" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="img_h_8.jpg" alt="Nature 3" class="img-fluid"></div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
+
+          <!-- Text Content -->
           <div class="col-lg-4 order-lg-1">
             <span class="section-subtitle" data-aos="fade-up">Welcome</span>
-            <h1 class="mb-4" data-aos="fade-up">
-              !! THE BEAUTY OF NATURE SHOULD BE RESPECTED !!
-            </h1>
+            <h1 class="mb-4" data-aos="fade-up">!! THE BEAUTY OF NATURE SHOULD BE RESPECTED !!</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Let’s preserve what we didn’t create. Nature breathes, sings, and heals—only if we let it.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">© 2025 William~hax. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts: JS Libs -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="aos.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script>
+    AOS.init();
+
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          spaceBetween: 40
+        },
+        1200: {
+          spaceBetween: 50
+        }
+      }
+    });
+  </script>
 <section id="wilderness-tale" class="bg-green-100 dark:bg-green-900 text-gray-900 dark:text-gray-100 py-12 px-6 rounded-lg shadow-lg">
   <div class="max-w-3xl mx-auto text-center space-y-6">
 	<div class="absolute inset-0 bg-black bg-opacity-50">
